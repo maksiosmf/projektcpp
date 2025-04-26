@@ -1,0 +1,3 @@
+/Users/maksymilianwojcik/CLionProjects/projektcpp/cmake-build-debug/CMakeFiles/projektcpp.dir
+/Users/maksymilianwojcik/CLionProjects/projektcpp/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/maksymilianwojcik/CLionProjects/projektcpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
