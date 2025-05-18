@@ -27,7 +27,7 @@ namespace PhoneBook {
 
     void Directory::removeEntry(const Name& name) {
         entries.erase(std::remove_if(entries.begin(), entries.end(),
-                                     [&name](const Entry& entry) { return entry.first == name; }), entries.end());
+            [&name](const Entry& entry) { return entry.first == name; }), entries.end());
         saveToFile();
     }
 
