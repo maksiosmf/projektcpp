@@ -1,33 +1,28 @@
-# Advanced Phone Directory
+# Phone Directory
 
-A C++ application that provides a simple and intuitive phone directory management system. This application fulfills various C++ programming requirements including input/output operations, control structures, custom type definitions, namespaces, command-line arguments, custom functions, and data structure implementations.
+A simple C++ app for managing phone contacts with persistent storage.
 
 ## Features
 
-- Add phone directory entries
-- Remove entries
+- Add, remove, and find contacts
 - Display all entries
-- Find specific entries by name
 - Sort entries alphabetically
-- Persistent storage (entries are saved to a file)
+- Save data to file automatically
 
 ## Requirements
 
-- C++ compiler with C++14 support
-- CMake (3.30 or later)
+- C++ compiler (C++14 support)
+- CMake (3.30+)
 
-## Building the Application
+## Building
 
-1. Clone the repository
-2. Navigate to the project directory
-3. Build the application using CMake:
 ```
 cmake --build cmake-build-debug --target projektcpp
 ```
 
 ## Usage
 
-The application uses command-line arguments to perform various operations. Here are the available commands:
+The application uses command-line arguments to perform various operations.
 
 ### Adding an Entry
 
@@ -35,7 +30,7 @@ The application uses command-line arguments to perform various operations. Here 
 ./cmake-build-debug/projektcpp add [name] [phone]
 ```
 
-Example:
+E.g.:
 ```
 ./cmake-build-debug/projektcpp add John 123456789
 ```
@@ -46,9 +41,9 @@ Example:
 ./cmake-build-debug/projektcpp remove [name]
 ```
 
-Example:
+E.g.:
 ```
-./cmake-build-debug/projektcpp remove John
+./cmake-build-debug/projektcpp remove JohnPork
 ```
 
 ### Displaying All Entries
@@ -63,9 +58,9 @@ Example:
 ./cmake-build-debug/projektcpp find [name]
 ```
 
-Example:
+E.g.:
 ```
-./cmake-build-debug/projektcpp find John
+./cmake-build-debug/projektcpp find JohnPork
 ```
 
 ### Sorting Entries
@@ -76,17 +71,16 @@ Example:
 
 ## Project Structure
 
-- `main.cpp`: Main application entry point
-- `include/PhoneDirectory.h`: Header file defining the Directory class
+- `main.cpp`: Main app
+- `include/PhoneDirectory.h`: Defining directory class
 - `src/PhoneDirectory.cpp`: Implementation of the Directory class
 
 ## Implementation Details
 
-The application uses a custom namespace `PhoneBook` and implements the following C++ features:
+This app uses a custom made namespace `PhoneBook` that implements following C++ features:
 
 - Custom type definitions using `typedef`
-- Namespaces for code organization
-- Command-line argument processing
-- Custom functions with various parameter passing methods
-- File I/O operations for data persistence
-- STL containers and algorithms 
+- Custom Namespaces for organisation
+- CMD arg. processing
+- Custom functions
+- Containers and algorithms
